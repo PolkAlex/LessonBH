@@ -1,6 +1,8 @@
 package lesson02;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class JavaTask1 {
@@ -23,17 +25,17 @@ public class JavaTask1 {
 //        static void step1(int[] array) {
 //
 //        int max = array[0];
-//        int min = array[0];
+//        int minList = array[0];
 //        for (int i = 0; i < array.length; i++) {
 //            if (array[i] > max) {
 //                max = array[i];
 //            }
-//            if (array[i] < min) {
-//                min = array[i];
+//            if (array[i] < minList) {
+//                minList = array[i];
 //            }
 //        }
 //        System.out.println("max = " + max);
-//        System.out.println("min = " + min);
+//        System.out.println("minList = " + minList);
 //    }
     // --------- найти числа, которые меньше среднего арифметического в массиве ---------
 //    static void step2(int[] array) {
@@ -44,7 +46,7 @@ public class JavaTask1 {
 //        }
 //        double average = (double) sum / array.length;
 //        System.out.println("Average of array = " + average);
-//        System.out.print("Min of average: ");
+//        System.out.print("minList of average: ");
 //        for (int i = 0; i < array.length; i++) {
 //            if (i < average) {
 //                System.out.print(array[i] + "; ");
@@ -60,15 +62,16 @@ public class JavaTask1 {
                 min = i;
             }
         }
-        System.out.print("Min index of array = ");
+
+        System.out.print("min index of array = ");
         boolean first = true;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == min) {
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] == min) {
                 if (first) {
-                    System.out.print(i);
+                    System.out.print(j);
                     first = false;
                 } else {
-                    System.out.print(" " + i);
+                    System.out.print(" " + j);
                 }
             }
         }
