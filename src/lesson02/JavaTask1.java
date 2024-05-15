@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class JavaTask1 {
     public static void main(String[] args) {
 
+        System.out.println("Введите пять значений массива: ");
         Scanner sc = new Scanner(System.in);
 
         int[] array = new int[5];
