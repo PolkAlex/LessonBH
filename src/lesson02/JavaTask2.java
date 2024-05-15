@@ -17,11 +17,11 @@ public class JavaTask2 {
 
         System.out.println("-----step3-----");
         System.out.println("Введите значения аргументов квадратного уравнения: ");
-        System.out.println("введите значение аргумента 'a' ");
+        System.out.print("введите значение аргумента 'a' ");
         double a = scanner.nextDouble();
-        System.out.println("введите значение аргумента 'b' ");
+        System.out.print("введите значение аргумента 'b' ");
         double b = scanner.nextDouble();
-        System.out.println("введите значение аргумента 'c' ");
+        System.out.print("введите значение аргумента 'c' ");
         double c = scanner.nextDouble();
         step3(a, b, c);
     }
