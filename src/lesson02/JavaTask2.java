@@ -6,16 +6,29 @@ public class JavaTask2 {
 
     public static void main(String[] args) {
 
+        System.out.println("-----step1-----");
+        step1();
+
+        System.out.println("-----step2-----");
+        System.out.println("Введите число от 1 до 12: ");
         Scanner scanner = new Scanner(System.in);
         int month = scanner.nextInt();
-
-//        step1();
         step2(month);
+
+        System.out.println("-----step3-----");
+        System.out.println("Введите значения аргументов квадратного уравнения: ");
+        System.out.println("введите значение аргумента 'a' ");
+        double a = scanner.nextDouble();
+        System.out.println("введите значение аргумента 'b' ");
+        double b = scanner.nextDouble();
+        System.out.println("введите значение аргумента 'c' ");
+        double c = scanner.nextDouble();
+        step3(a, b, c);
     }
 
     static void step1() {
         // слева направо
-        System.out.println("слева направо: ");
+        System.out.println("Матрица 5х5 слева направо: ");
         int n = 5; // Количество чисел в строке и в столбце
         int maxValue = 25; // Максимальное значение числа
 
@@ -26,7 +39,7 @@ public class JavaTask2 {
             }
         }
         // сверху вниз
-        System.out.println("сверху вниз: ");
+        System.out.println("Матрица 5х5 сверху вниз: ");
         int[][] array = {
                 {1, 6, 11, 16, 21},
                 {2, 7, 12, 17, 22},
@@ -82,6 +95,18 @@ public class JavaTask2 {
                 break;
             default:
                 System.out.println("Нет такого месяца");
+        }
+    }
+
+    static void step3(double a, double b, double c) {
+        double D = Math.pow(b, 2) - (4 * a * c);
+        if (D < 0) {
+            System.out.println("Корней нет");
+            System.out.println("D = " + D);
+        } else {
+            double x1 = (-b + Math.sqrt(D)) / (2 * a);
+            double x2 = (-b - Math.sqrt(D)) / (2 * a);
+            System.out.println("Корни уравнения: " + x1 + ", " + x2);
         }
     }
 }
