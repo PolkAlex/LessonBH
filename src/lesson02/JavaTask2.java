@@ -6,9 +6,11 @@ public class JavaTask2 {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        step1();
-        System.out.println("----------//----------");
+        Scanner scanner = new Scanner(System.in);
+        int month = scanner.nextInt();
+
+//        step1();
+        step2(month);
     }
 
     static void step1() {
@@ -25,12 +27,61 @@ public class JavaTask2 {
         }
         // сверху вниз
         System.out.println("сверху вниз: ");
-        int[][] array = {{1, 6, 11, 16, 21}, {2, 7, 12, 17, 22}, {3, 8, 13, 18, 23}, {4, 9, 14, 19, 24}, {5, 10, 15, 20, 25}};
+        int[][] array = {
+                {1, 6, 11, 16, 21},
+                {2, 7, 12, 17, 22},
+                {3, 8, 13, 18, 23},
+                {4, 9, 14, 19, 24},
+                {5, 10, 15, 20, 25}};
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j] + " ");
             }
             System.out.println();
+        }
+    }
+
+    static void step2 (int month) {
+
+        switch (month) {
+            case 1:
+                System.out.println("Январь");
+                break;
+            case 2:
+                System.out.println("Февраль");
+                break;
+            case 3:
+                System.out.println("Март");
+                break;
+            case 4:
+                System.out.println("Апрель");
+                break;
+            case 5:
+                System.out.println("Май");
+                break;
+            case 6:
+                System.out.println("Июнь");
+                break;
+            case 7:
+                System.out.println("Июль");
+                break;
+            case 8:
+                System.out.println("Август");
+                break;
+            case 9:
+                System.out.println("Сентябрь");
+                break;
+            case 10:
+                System.out.println("Октябрь");
+                break;
+            case 11:
+                System.out.println("Ноябрь");
+                break;
+            case 12:
+                System.out.println("Декабрь");
+                break;
+            default:
+                System.out.println("Нет такого месяца");
         }
     }
 }
