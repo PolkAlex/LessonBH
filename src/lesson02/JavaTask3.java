@@ -7,7 +7,7 @@ public class JavaTask3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        step1(n);
+        //step1(n); не смог решить
     }
 
     public static void step1(int n){
@@ -19,5 +19,9 @@ public class JavaTask3 {
             max = max - min;
             n = (int) (Math.random()* ++max) + min;
         }
+    }
+    public int[][] step2 (int[][] arr) {
+
+        return arr;
     }
 }
