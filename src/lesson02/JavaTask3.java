@@ -7,10 +7,10 @@ public class JavaTask3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-
+        step1(n);
     }
 
-    int [][] step1 (int n){
+    public static void step1(int n){
 
         int [][] array = new int[n][n];
         int max = n;
@@ -19,6 +19,5 @@ public class JavaTask3 {
             max = max - min;
             n = (int) (Math.random()* ++max) + min;
         }
-        return new int[n][n];
     }
 }
