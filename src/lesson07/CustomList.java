@@ -74,8 +74,9 @@ public class CustomList<T> implements List<T> {
 
         for (int i = 0; i < value.length; i++) {
             stringBuilder.append(value[i]);
-            stringBuilder.append();
+            stringBuilder.append(" ");
         }
+        return null;
     }
 
     @Override
