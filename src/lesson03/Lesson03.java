@@ -17,8 +17,8 @@ public class Lesson03 {
 ////        System.out.println(s.trim());
 //        System.out.println(s);
 //        System.out.println(Math.pow(3, 2.3));
-        //--------------practice--------------
-        // сортировка по возрастанию
+//        //--------------practice--------------
+//        //сортировка по возрастанию
 //        System.out.println(Math.random()*5);
 //        int[] array = {1,3,6,7,8,8,10};
 //
@@ -38,12 +38,13 @@ public class Lesson03 {
 //                }
 //            }
 //        }
+//        //for (int j : array)
 //        for (int j = 0; j < array.length; j++) {
 //            System.out.println(array[j]);
 //        }
-////        for (int j : array){
-////            System.out.println(j);
-////        }
+//        for (int j : array){
+//            System.out.println(j);
+//        }
 //        //--------------practice--------------
 //        // перебор двумерного массива
 //        int[][] array = {{1,2,3}, {4,5,6}, {7,8,9,10}};
