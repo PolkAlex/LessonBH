@@ -1,5 +1,7 @@
 package lesson06.homeWork06_3;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,12 +17,14 @@ public class Main {
         Category sport = new Category("Sport", sportProducts);
         Category fruit = new Category("Fruits", fruitsProducts);
 
-        Basket basket = new Basket(sportProducts);
+        Basket basketOne = new Basket(sportProducts);
+        Basket basketTwo = new Basket(fruitsProducts);
 
-        User vadim = new User("vadim@mail.ru0", "pass", basket);
-        User sasha = new User("sasha@mail.ru0", "pass01", basket);
+        User vadim = new User("vadim@mail.ru", "pass", basketOne);
+        User sasha = new User("sasha@mail.ru", "pass01", basketTwo);
 
         System.out.println(sport);
+        System.out.println(fruit);
 
         User[] users = new User[] {vadim, sasha};
 

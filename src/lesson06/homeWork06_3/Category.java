@@ -30,9 +30,6 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Category{" +
-                "categoryName='" + categoryName + '\'' +
-                ", products=" + Arrays.toString(products) +
-                '}';
+        return "Category: " + "categoryName = " + categoryName + ", products = " + Arrays.toString(products) + ";";
     }
 }
