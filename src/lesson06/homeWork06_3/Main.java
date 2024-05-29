@@ -15,5 +15,17 @@ public class Main {
         Category sport = new Category("Sport", sportProducts);
         Category fruit = new Category("Fruits", fruitsProducts);
 
+        Basket basket = new Basket(sportProducts);
+
+        User vadim = new User("vadim@mail.ru0", "pass", basket);
+        User sasha = new User("sasha@mail.ru0", "pass01", basket);
+
+        System.out.println(sport);
+
+        User[] users = new User[] {vadim, sasha};
+
+        for (User user: users) {
+            System.out.println(user.getUserBasket());
+        }
     }
 }
