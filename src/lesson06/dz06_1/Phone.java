@@ -1,6 +1,9 @@
 package lesson06.dz06_1;
 
-public class Phone {
+import java.io.Serializable;
+import java.util.Arrays;
+
+public class Phone implements Serializable {
 
     private int number;
     private String model;
@@ -59,5 +62,9 @@ public class Phone {
 
     public int getNumber (int number) {
         return this.number;
+    }
+
+    public void sendMessage (int... numbers) {
+        System.out.println("Сообщение будет отправлено абоненту(ам): " + Arrays.toString(numbers));
     }
 }
