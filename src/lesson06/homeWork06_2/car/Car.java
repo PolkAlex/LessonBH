@@ -1,7 +1,7 @@
-package lesson06.dz06_2.car;
+package lesson06.homeWork06_2.car;
 
-import lesson06.dz06_2.driver.Driver;
-import lesson06.dz06_2.engine.Engine;
+import lesson06.homeWork06_2.driver.Driver;
+import lesson06.homeWork06_2.engine.Engine;
 
 public abstract class Car {
 

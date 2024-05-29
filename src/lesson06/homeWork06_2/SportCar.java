@@ -1,6 +1,6 @@
-package lesson06.dz06_2;
+package lesson06.homeWork06_2;
 
-import lesson06.dz06_2.car.Car;
+import lesson06.homeWork06_2.car.Car;
 
 public class SportCar extends Car {
 

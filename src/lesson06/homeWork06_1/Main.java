@@ -1,4 +1,4 @@
-package lesson06.dz06_1;
+package lesson06.homeWork06_1;
 
 public class Main extends Phone {
 
