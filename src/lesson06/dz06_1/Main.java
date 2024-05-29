@@ -20,5 +20,7 @@ public class Main extends Phone {
         System.out.println("Number: " + xiaomi.getNumber(648));
 
         iphone.receiveCall("James", 1684);
+
+        samsung.sendMessage(646,579,679,16584);
     }
 }
