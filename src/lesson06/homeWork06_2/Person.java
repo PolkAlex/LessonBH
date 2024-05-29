@@ -1,6 +1,6 @@
-package lesson06.dz06_2;
+package lesson06.homeWork06_2;
 
-import lesson06.dz06_2.driver.Driver;
+import lesson06.homeWork06_2.driver.Driver;
 
 public class Person extends Driver {
 

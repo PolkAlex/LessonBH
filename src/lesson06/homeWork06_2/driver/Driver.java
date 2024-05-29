@@ -1,4 +1,4 @@
-package lesson06.dz06_2.driver;
+package lesson06.homeWork06_2.driver;
 
 public class Driver {
 
