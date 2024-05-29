@@ -35,4 +35,9 @@ public class Product {
         this.price = price;
         this.rating = rating;
     }
+
+    @Override
+    public String toString() {
+        return "(product: " + "name = " + name + ", price = " + price + ", rating = " + rating + ")";
+    }
 }

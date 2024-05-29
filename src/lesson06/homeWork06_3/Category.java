@@ -1,5 +1,7 @@
 package lesson06.homeWork06_3;
 
+import java.util.Arrays;
+
 public class Category {
 
     private String categoryName;
@@ -24,5 +26,10 @@ public class Category {
     public Category(String categoryName, Product[] products) {
         this.categoryName = categoryName;
         this.products = products;
+    }
+
+    @Override
+    public String toString() {
+        return "Category: " + "categoryName = " + categoryName + ", products = " + Arrays.toString(products) + ";";
     }
 }
