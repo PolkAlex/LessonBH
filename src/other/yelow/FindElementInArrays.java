@@ -1,9 +1,9 @@
-package Yellow;
+package other.yelow;
 
 public class FindElementInArrays {
     public static void main(String[] args) {
 
-        //Даны три неубывающих массива чисел
+        // Даны три неубывающих массива чисел
         // Найти число, которое присутствует во всех трех массивах
 
         int[] array1 = new int[] {1,2,4,7};

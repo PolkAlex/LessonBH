@@ -1,4 +1,4 @@
-package Yellow;
+package other.yelow;
 
 public class Numbers {
 
