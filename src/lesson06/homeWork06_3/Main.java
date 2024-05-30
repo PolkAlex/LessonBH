@@ -1,7 +1,5 @@
 package lesson06.homeWork06_3;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -26,9 +24,9 @@ public class Main {
         System.out.println(sport);
         System.out.println(fruit);
 
-        User[] users = new User[] {vadim, sasha};
+        User[] users = new User[]{vadim, sasha};
 
-        for (User user: users) {
+        for (User user : users) {
             System.out.println(user.getUserBasket());
         }
     }
