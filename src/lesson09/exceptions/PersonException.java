@@ -2,6 +2,9 @@ package lesson09.exceptions;
 
 public class PersonException {
 
+    private Integer age;
+    private String name;
+
     public PersonException(Integer age, String name) {
         this.age = age;
         this.name = name;
@@ -30,7 +33,4 @@ public class PersonException {
                 ", name='" + name + '\'' +
                 '}';
     }
-
-    private Integer age;
-    private String name;
 }
