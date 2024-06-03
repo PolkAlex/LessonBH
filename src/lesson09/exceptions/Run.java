@@ -1,5 +1,9 @@
 package lesson09.exceptions;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Run {
 
     public static void main(String[] args) {
@@ -31,6 +35,25 @@ public class Run {
         }
 
         System.out.println("End of program");
+
+        PersonException person2 = new PersonException(24, "Dima");
+        PersonException person3 = new PersonException(21, "Alex");
+        PersonException person4 = new PersonException(27, "Petr");
+        PersonException person5 = new PersonException(34, "John");
+        PersonException person6 = new PersonException(67, "Nikita");
+
+        List<PersonException> persons = new ArrayList<>();
+        persons.add(person2);
+        persons.add(person3);
+        persons.add(person4);
+        persons.add(person5);
+        persons.add(person6);
+
+        System.out.println(persons);
+
+        Collections.sort(persons, PersonComparator.getName());
+
+        System.out.println(persons);
     }
 
     public static void validateAge(int age) {
@@ -58,5 +81,9 @@ public class Run {
 
     public static void runTime() {
         throw new RuntimeException("this is runTime");
+    }
+
+    public static void printName(String name) {
+        System.out.println(name);
     }
 }
