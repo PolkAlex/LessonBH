@@ -6,6 +6,12 @@ public class Product {
     private double price;
     private double rating;
 
+    public Product(String name, double price, double rating) {
+        this.name = name;
+        this.price = price;
+        this.rating = rating;
+    }
+
     public String getName() {
         return name;
     }
@@ -27,12 +33,6 @@ public class Product {
     }
 
     public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public Product(String name, double price, double rating) {
-        this.name = name;
-        this.price = price;
         this.rating = rating;
     }
 

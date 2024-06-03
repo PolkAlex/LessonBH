@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Library {
 
-    private List<Book> books;
+    private final List<Book> books;
 
     public Library() {
         books = new ArrayList<>();
@@ -19,15 +19,15 @@ public class Library {
         return books;
     }
 
-    public boolean addBook (Book book) {
-        return this.books.add(book);
+    public void addBook(Book book) {
+        this.books.add(book);
     }
 
-    public boolean removeBook (Book book) {
-        return this.books.remove(book);
+    public void removeBook(Book book) {
+        this.books.remove(book);
     }
 
-    public Book removeBook (int index) {
+    public Book removeBook(int index) {
         int size = this.books.size();
         if (index > size) {
             throw new IllegalArgumentException("Нет такой ячейки с книгой");
@@ -36,8 +36,8 @@ public class Library {
     }
 
     // 0 (n)
-    public Book findByName (String nameBook) {
-        for (Book book: this.books) {
+    public Book findByName(String nameBook) {
+        for (Book book : this.books) {
             if (book.getTitle().equals(nameBook)) {
                 return book;
             }

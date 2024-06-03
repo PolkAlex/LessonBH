@@ -2,7 +2,7 @@ package lesson06.homeWork06_3;
 
 import java.util.Arrays;
 
-public class Basket{
+public class Basket {
 
     //Создать класс Basket, содержащий массив купленных товаров
     private Product[] boughtProducts;
