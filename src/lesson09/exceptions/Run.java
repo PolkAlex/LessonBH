@@ -18,7 +18,7 @@ public class Run {
 
         try {
             nullPointer();
-            System.out.println("some code");
+            System.out.println("дальше код в блоке трай-кэч не выполняется после nullPointer()");
             runTime();
         } catch (NullPointerException e) {
             System.out.println(e.getMessage());
