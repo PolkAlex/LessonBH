@@ -9,7 +9,7 @@ public class PersonComparator {
 
     }
 
-    public static Comparator<PersonException> getName(){
+    public static Comparator<PersonException> getName() {
         return Comparator.comparing(PersonException::getName);
     }
 }
