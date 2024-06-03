@@ -15,6 +15,22 @@ public class Run {
         PersonException personException = new PersonException(22, "Alex");
         System.out.println(personException);
         System.out.println(person1);
+
+        try {
+            nullPointer();
+            System.out.println("some code");
+            runTime();
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            System.out.println("this is finally");
+        }
+
+        System.out.println("End of program");
     }
 
     public static void validateAge(int age) {
@@ -30,5 +46,17 @@ public class Run {
         } catch (ValidateAgeException e) {
             System.out.println(person.getName() + " идет грустный домой");
         }
+    }
+
+    public static void nullPointer() {
+        throw new NullPointerException("this is null");
+    }
+
+    public static void illegal() {
+        throw new IllegalArgumentException("this is illegal");
+    }
+
+    public static void runTime() {
+        throw new RuntimeException("this is runTime");
     }
 }
