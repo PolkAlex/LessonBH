@@ -9,7 +9,7 @@ public class Run {
         PersonException person1 = null;
         try {
             Integer age = person1.getAge();
-        }catch (NullPointerException e) {
+        } catch (NullPointerException e) {
             System.out.println(e.getMessage());
         }
         PersonException personException = new PersonException(22, "Alex");
@@ -23,8 +23,8 @@ public class Run {
         }
     }
 
-    public static void bar (PersonException person) {
-        try{
+    public static void bar(PersonException person) {
+        try {
             validateAge(person.getAge());
             System.out.println(person.getName() + "напивается");
         } catch (ValidateAgeException e) {
