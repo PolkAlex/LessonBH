@@ -9,5 +9,8 @@ public class Main {
 
         Square<Double> square1 = new Square<>(10.5);
         System.out.println(square1.getLenght());
+
+        Square<String> square2 = new Square<>("123");
+        System.out.println(square2.getLenght());
     }
 }

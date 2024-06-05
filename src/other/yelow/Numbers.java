@@ -23,8 +23,9 @@ public class Numbers {
         return result;
     }
 
-    // метод, который возвращает true, если поданный на ввод массив int содержит 3
+    // Метод, который возвращает true, если поданный на ввод массив int содержит 3
     // и более последовательных числа в любом месте
+
     public static boolean checkerNumbers (int[] array) {
 
         for (int i = 0; i < array.length-1; i++) {

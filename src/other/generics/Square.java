@@ -2,6 +2,7 @@ package other.generics;
 
 public class Square<T> {
 
+    //Square переводится как "квадрат"
     private final T lenght;
 
     public Square(T lenght) {

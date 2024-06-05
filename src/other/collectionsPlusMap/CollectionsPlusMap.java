@@ -16,6 +16,7 @@ public class CollectionsPlusMap {
         planetsSet.add("Merkuriy");
         planetsSet.add("Venera");
         planetsSet.add("Zemlya");
+        planetsSet.add("Zemlya"); // в hashSet не может быть дубликатов
         System.out.println(planetsSet);
 
         Map<String, Double> planetWeights = new HashMap<>();
@@ -23,5 +24,10 @@ public class CollectionsPlusMap {
         planetWeights.put("Venera", 989.18);
         planetWeights.put("Zemlya", 149.04);
         System.out.println(planetWeights.get("Venera"));
+
+        Iterator<String> iterator = planets.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
