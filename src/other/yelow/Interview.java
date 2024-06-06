@@ -1,11 +1,18 @@
 package other.yelow;
 
-import java.util.*;
-import java.lang.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Interview {
-    public static void main(String args[])
-    {
+
+    //Написать программу, которая будет выводить строку в зависимости от входных данных:
+    //ТестОТестОТест
+    //ТестОТест
+    //Тест
+    //""
+
+    public static void main(String[] args) {
+
         String word = "Тест";
         String separator = "О";
         int count = 3;
