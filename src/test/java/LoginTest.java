@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -16,6 +15,7 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.cssSelector("[type='submit']")).click();
         String flashSuccessLogin = driver.findElement(By.cssSelector("[class='flash success']")).getText();
+
         assertEquals(flashSuccessLogin,
                 "You logged into a secure area!\n" + "×",
                 "Не удалось залогиниться");
