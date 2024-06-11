@@ -8,6 +8,7 @@ public class LoginTest extends BaseTest {
     String userName = "tomsmith";
     String password = "SuperSecretPassword!";
 
+    //успешный логин
     @Test
     public void successLogin() {
 
@@ -22,6 +23,7 @@ public class LoginTest extends BaseTest {
                 "Не удалось залогиниться");
     }
 
+    //неправильный юзернейм
     @Test
     public void notCorrectUserName() {
 
@@ -36,6 +38,7 @@ public class LoginTest extends BaseTest {
                 "Сообщение об ошибке при неуспешном логине не корректное");
     }
 
+    //неправильный пароль
     @Test
     public void notCorrectPassword() {
 
