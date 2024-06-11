@@ -24,7 +24,7 @@ public class Interview {
 
         for (int i = 0; i < count; i++) {
             result.add (word);
-            if (i < count - 1) {
+            if (i < count-1) {
                 result.add (separator);
             }
         }

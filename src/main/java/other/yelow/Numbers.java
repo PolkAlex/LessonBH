@@ -13,6 +13,7 @@ public class Numbers {
     }
 
     private static long calculateFactorial(long number) {
+
         if (number == 0 || number == 1) {
             return 1;
         }
