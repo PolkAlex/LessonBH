@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class DropdownTest extends BaseTest{
+public class DropdownTest extends BaseTest {
 
     @Test
     public void selectedDefaultOption() {
 
         driver.get("https://the-internet.herokuapp.com/dropdown");
-        String defaultOption =  driver.findElement(By.cssSelector("[disabled = 'disabled']")).getText();
+        String defaultOption = driver.findElement(By.cssSelector("[disabled = 'disabled']")).getText();
         assertEquals(defaultOption, "Please select an option", "Не выбрана дефолтная опция");
     }
 

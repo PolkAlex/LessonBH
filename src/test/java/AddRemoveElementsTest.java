@@ -19,7 +19,7 @@ public class AddRemoveElementsTest extends BaseTest {
         List<WebElement> deleteButtons = driver.findElements(By.cssSelector("[onclick='deleteElement()']"));
         assertEquals(deleteButtons.size(), 2, "Кол-во кнопок на странице не совпадает");
         deleteButtons.get(1).click();
-        deleteButtons =  driver.findElements(By.cssSelector("[onclick='deleteElement()']"));
+        deleteButtons = driver.findElements(By.cssSelector("[onclick='deleteElement()']"));
         assertEquals(deleteButtons.size(), 1, "Кол-во кнопок на странице не совпадает");
     }
 }
