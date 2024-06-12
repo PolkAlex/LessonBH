@@ -14,6 +14,7 @@ public class AuthenticationTest extends BaseTest {
         when().
                 get("https://api.stripe.com/v1/charges").
         then().
+                log().all().
                 statusCode(200).
                 body("url", equalTo("/v1/charges"));
     }
