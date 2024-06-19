@@ -9,6 +9,25 @@ import java.util.concurrent.TimeUnit;
 public abstract class BaseTest {
     WebDriver driver;
 
+    private String userName = "tomsmith";
+    private String password = "SuperSecretPassword!";
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");

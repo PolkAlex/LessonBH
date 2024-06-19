@@ -5,16 +5,13 @@ import static org.testng.Assert.assertEquals;
 
 public class LoginTest extends BaseTest {
 
-    String userName = "tomsmith";
-    String password = "SuperSecretPassword!";
-
     //успешный логин
     @Test
     public void successLogin() {
 
         driver.get("https://the-internet.herokuapp.com/login");
-        driver.findElement(By.id("username")).sendKeys(userName);
-        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.id("username")).sendKeys(getUserName());
+        driver.findElement(By.id("password")).sendKeys(getPassword());
         driver.findElement(By.cssSelector("[type='submit']")).click();
         String flashSuccessLogin = driver.findElement(By.cssSelector("[class='flash success']")).getText();
 
@@ -29,7 +26,7 @@ public class LoginTest extends BaseTest {
 
         driver.get("https://the-internet.herokuapp.com/login");
         driver.findElement(By.id("username")).sendKeys("userName");
-        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.id("password")).sendKeys(getPassword());
         driver.findElement(By.cssSelector("[type='submit']")).click();
         String flashSuccessLogin = driver.findElement(By.cssSelector("[class='flash error']")).getText();
 
@@ -43,7 +40,7 @@ public class LoginTest extends BaseTest {
     public void notCorrectPassword() {
 
         driver.get("https://the-internet.herokuapp.com/login");
-        driver.findElement(By.id("username")).sendKeys(userName);
+        driver.findElement(By.id("username")).sendKeys(getUserName());
         driver.findElement(By.id("password")).sendKeys("password");
         driver.findElement(By.cssSelector("[type='submit']")).click();
         String flashSuccessLogin = driver.findElement(By.cssSelector("[class='flash error']")).getText();
